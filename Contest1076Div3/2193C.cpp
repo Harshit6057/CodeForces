@@ -26,12 +26,22 @@ int main(){
       cin >> b[i];
     }
 
+    for(int i= 0; i < q; i++){
+      cin >> l;
+      cin >> r;
+      
+    }
+
+    
+
+
+
 
 
     int l = 0;
-    int r =0;
+    int r = 0;
     
-    for(int i = l; l <)
+    
    
 
     while(sum < s){
