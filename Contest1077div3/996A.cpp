@@ -6,20 +6,23 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
-        int ans = 0;
-        vector<int> temp = {100, 20, 10, 5, 1};
-        int t = 0;
-        int i = 0;
-        while( n > 0){
-          if(n >= temp[i]){
-            n = n - temp[i];
-    
-            ans++;
-          }
-          else{
-            i++;
+        
+        vector<int> temp;
+        for(int i = 1; i <= 10; i++){
+          cin >> temp[i];
+        }
+        int ans = 1e9;
+        for(int i = 0; i < n-1;i++){
+          int t = 0;
+          for(int j = i; j < n-1;j++){
+
+          if(temp[j] < temp[j+1]){
+            t++;
           }
         }
+
+        }
+        
         cout << ans << endl;
   
 }
